@@ -1,3 +1,5 @@
+// import {Container} from './Section.styled';
+import PropTypes from 'prop-types';
 
 const FeedBackButton = ({option, feedback, onLeaveFeedback}) => {
     return (
@@ -20,5 +22,16 @@ const FeedbackOptions = ({options, onLeaveFeedback}) => {
     );
 
 }
+
+FeedBackButton.propTypes = {
+    option: PropTypes.string,
+    feedback: PropTypes.string.isRequired,
+    onLeaveFeedback: PropTypes.func,
+  };
+
+FeedbackOptions.propTypes = {
+    options: PropTypes.array.isRequired,
+    onLeaveFeedback: PropTypes.func.isRequired, 
+};
 
 export default FeedbackOptions;

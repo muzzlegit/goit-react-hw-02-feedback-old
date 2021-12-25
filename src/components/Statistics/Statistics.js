@@ -1,14 +1,18 @@
+import {Container} from './Statistics.styled';
+
+
 const Statistics = (props) => {
     return (
-            <ul>
+            <Container>
                 {(Object.entries(props)).map(prop => {
                     return (
                           <li key = {prop[0]}>{prop[0]}: {prop[1]} </li>
                         )   
                     }   
                 )}
-            </ul>
+            </Container>
     )          
 }
+
 
 export default Statistics;
