@@ -1,14 +1,14 @@
-// import {Container} from './Section.styled';
+import { ButtonBox } from './FeedbackOptions.styled';
 import PropTypes from 'prop-types';
 
 const FeedBackButton = ({option, feedback, onLeaveFeedback}) => {
     return (
-            <button 
+            <ButtonBox 
                 key = {option}
                 name = {feedback}
                 onClick={onLeaveFeedback}>
                 {feedback}
-            </button>
+            </ButtonBox>
     );
 }
 const FeedbackOptions = ({options, onLeaveFeedback}) => {

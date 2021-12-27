@@ -1,4 +1,4 @@
-import {Container} from './Statistics.styled';
+import {Container, Item} from './Statistics.styled';
 
 
 const Statistics = (props) => {
@@ -6,7 +6,7 @@ const Statistics = (props) => {
             <Container>
                 {(Object.entries(props)).map(prop => {
                     return (
-                          <li key = {prop[0]}>{prop[0]}: {prop[1]} </li>
+                          <Item key = {prop[0]}>{prop[0]}: {prop[1]} </Item>
                         )   
                     }   
                 )}
